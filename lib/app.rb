@@ -17,4 +17,17 @@ class Words
   def singledigit
     @singledigit
   end
+
+  def get_number
+    output = []
+    number_array = @number.to_s.split('')
+    number_array.each do |character|
+      if character === '1'
+        output.push(@singledigit.fetch(1))
+      else 
+        "test"
+      end
+    end
+  output.join(' ')
+  end
 end
